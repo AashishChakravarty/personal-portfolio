@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-cv": {
+    "aashish-resume": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-cv",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-cv:build"
+            "browserTarget": "aashish-resume:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-cv:build:production"
+              "browserTarget": "aashish-resume:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-cv:build"
+            "browserTarget": "aashish-resume:build"
           }
         },
         "test": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "angular-cv-e2e": {
+    "aashish-resume-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,11 +104,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-cv:serve"
+            "devServerTarget": "aashish-resume:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-cv:serve:production"
+              "devServerTarget": "aashish-resume:serve:production"
             }
           }
         },
@@ -124,7 +124,7 @@
       }
     }
   },
-  "defaultProject": "angular-cv",
+  "defaultProject": "aashish-resume",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
