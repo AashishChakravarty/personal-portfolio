@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -13,14 +14,19 @@ const routes: Routes = [
   }
 ];
 
+const config: ExtraOptions = {
+  useHash: true,
+};
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    ProfileModule
+    RouterModule.forRoot(routes, config),
+    ProfileModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
