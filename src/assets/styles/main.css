@@ -419,8 +419,12 @@
   border-radius: 3px;
   background: #FFF;
   cursor: default;
-  -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-          box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+  -webkit-box-shadow: inset 0 0 1px #FFF,
+ inset 0 1px 7px #EBEBEB,
+ 0 3px 6px -3px #BBB;
+          box-shadow: inset 0 0 1px #FFF,
+ inset 0 1px 7px #EBEBEB,
+ 0 3px 6px -3px #BBB;
   -webkit-transition: 300ms ease 0s;
   -moz-transition: 300ms ease 0s;
   -ms-transition: 300ms ease 0s;
@@ -1319,7 +1323,7 @@
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
-  background-color: #888;
+  background-color: rgb(21, 70, 95);
   color: #FFFFFF;
 }
 
@@ -1341,7 +1345,7 @@
 .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
 .show >
 .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: #979797;
+  background-color: rgb(19, 106, 150);
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1511,7 +1515,8 @@ fieldset[disabled]
 }
 
 .btn-primary {
-  background-color: #378C3F;
+  background-color: rgb(21, 70, 95);
+  /* background-color: #378C3F; */
   color: #FFFFFF;
 }
 
@@ -1519,7 +1524,8 @@ fieldset[disabled]
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
-  background-color: #40a249;
+  background-color: rgb(19, 106, 150);
+  /* background-color: #40a249; */
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2594,16 +2600,16 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(55, 140, 63, 0.4);
+  background: rgba(10, 49, 68, 0.349);
 }
 
 .progress-container.progress-primary .progress-bar {
-  background: #378C3F;
+  background: #00334D;
 }
 
 .progress-container.progress-primary .progress-value,
 .progress-container.progress-primary .progress-badge {
-  color: #378C3F;
+  color: #00334D;
 }
 
 .progress-container.progress-info .progress {
@@ -3098,7 +3104,7 @@ body {
 }
 
 .nav-pills.nav-pills-primary .nav-item .nav-link.active, .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus, .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
-  background-color: #378C3F;
+  background-color: #00334D;
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
@@ -3398,7 +3404,8 @@ body {
 }
 
 .bg-primary {
-  background-color: #378C3F !important;
+  /* background-color: #378C3F !important; */
+  background-color: #00334D !important;
 }
 
 .bg-info {
@@ -7202,7 +7209,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-reference .carousel-indicators .active {
-  background-color: #378C3F;
+  background-color: #00334D;
 }
 
 .cc-reference .carousel-inner {
