@@ -19,8 +19,8 @@
                             <span class="input-group-addon">
                               <i class="fa fa-user-circle"></i>
                             </span>
-                            <input class="form-control" type="text" name="name" placeholder="Name"[(ngModel)]="model.name"
-                            #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required/>
+                            <input class="form-control" type="text" name="name" placeholder="Name" [(ngModel)]="model.name" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }"
+                              required/>
                             <!-- <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
                                 <div *ngIf="name.errors.required" class="pull-left">* Name is required</div>
                               </div> -->
@@ -33,8 +33,8 @@
                             <span class="input-group-addon">
                               <i class="fa fa-file-text"></i>
                             </span>
-                            <input class="form-control" type="text" name="subject" placeholder="Subject" [(ngModel)]="model.subject"
-                            #subject="ngModel" [ngClass]="{ 'is-invalid': f.submitted && subject.invalid }" required/>
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" [(ngModel)]="model.subject" #subject="ngModel"
+                              [ngClass]="{ 'is-invalid': f.submitted && subject.invalid }" required/>
                             <!-- <div *ngIf="f.submitted && subject.invalid" class="invalid-feedback">
                                 <div *ngIf="subject.errors.required" class="pull-left">* Subject is required</div>
                               </div> -->
@@ -48,7 +48,7 @@
                               <i class="fa fa-envelope"></i>
                             </span>
                             <input class="form-control" type="text" name="email" placeholder="E-mail" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required/>
+                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required/>
                             <!-- <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
                                 <div *ngIf="email.errors?.required" class="pull-left">* Email is required</div>
                                 <div *ngIf="email.errors?.pattern" class="pull-left">Enter must be a valid email address</div>
@@ -59,8 +59,8 @@
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" [(ngModel)]="model.message"
-                            #message="ngModel" [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message" [(ngModel)]="model.message" #message="ngModel" [ngClass]="{ 'is-invalid': f.submitted && message.invalid }"
+                              required></textarea>
                             <!-- <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
                                 <div *ngIf="message.errors.required" class="pull-left">* Message is required</div>
                               </div> -->
@@ -99,3 +99,4 @@
     </div>
   </div>
 </div>
+<ng-snotify class="material"></ng-snotify>

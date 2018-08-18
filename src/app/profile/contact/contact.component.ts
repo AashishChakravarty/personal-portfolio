@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
+import { SnotifyService } from 'ng-snotify';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -7,10 +9,12 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  snotifyConfig = environment.snotifyConfig;
   model: any = {};
 
   constructor(
-    private profile: ProfileService
+    private profile: ProfileService,
+    private snotify: SnotifyService
   ) { }
 
   ngOnInit() {
@@ -18,6 +22,13 @@ export class ContactComponent implements OnInit {
 
   contact() {
     this.profile.contactus(this.model).subscribe(data => {
+      if (data['status']) {
+        this.snotify.success('Thank you for Contact us.', 'Success', this.snotifyConfig);
+      } else {
+        this.snotify.warning('Something went wrong. Try again later.', 'Warning', this.snotifyConfig);
+      }
+    }, err => {
+      this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
     });
   }
 
