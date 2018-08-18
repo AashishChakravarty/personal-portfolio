@@ -1,29 +1,6 @@
-/*!
-
- =========================================================
- * Now-ui-kit - v1.1.0
- =========================================================
-
- * Product Page: http://www.creative-tim.com/product/now-ui-kit
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
 /*     brand Colors              */
 /*      light colors         */
-/* ========================================================================
- * bootstrap-switch - v3.3.2
- * http://www.bootstrap-switch.org
- * ========================================================================
- * Copyright 2012-2013 Mattia Larentis
- * http://www.apache.org/licenses/LICENSE-2.0
- */
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -651,8 +628,6 @@
 
 /*!
  * Datepicker for Bootstrap v1.7.0-dev (https://github.com/uxsolutions/bootstrap-datepicker)
- *
- * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
 .datepicker {
   padding: 8px 6px;
@@ -1516,7 +1491,6 @@ fieldset[disabled]
 
 .btn-primary {
   background-color: rgb(21, 70, 95);
-  /* background-color: #378C3F; */
   color: #FFFFFF;
 }
 
@@ -1525,7 +1499,6 @@ fieldset[disabled]
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
   background-color: rgb(19, 106, 150);
-  /* background-color: #40a249; */
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3404,7 +3377,6 @@ body {
 }
 
 .bg-primary {
-  /* background-color: #378C3F !important; */
   background-color: #00334D !important;
 }
 
@@ -3913,13 +3885,6 @@ img {
           box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* --------------------------------
-
-Nucleo Outline Web Font - nucleoapp.com/
-License - nucleoapp.com/license/
-Created using IcoMoon - icomoon.io
-
--------------------------------- */
 @font-face {
   font-family: 'Nucleo Outline';
   src: url("../fonts/nucleo-outline.eot");
