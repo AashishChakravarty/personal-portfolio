@@ -22,10 +22,10 @@ export class ContactComponent implements OnInit {
 
   contact() {
     this.profile.contactus(this.model).subscribe(data => {
-      if (data['status']) {
-        this.snotify.success('Thank you for Contact us.', 'Success', this.snotifyConfig);
+      if (data.status) {
+        this.snotify.success(data.message, 'Success', this.snotifyConfig);
       } else {
-        this.snotify.warning('Something went wrong. Try again later.', 'Warning', this.snotifyConfig);
+        this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
       }
     }, err => {
       this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);

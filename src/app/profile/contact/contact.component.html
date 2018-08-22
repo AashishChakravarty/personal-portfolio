@@ -9,7 +9,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form name="form" (ngSubmit)="f.form.valid && contact()" #f="ngForm" novalidate>
+                    <form name="form" (ngSubmit)="f.form.valid && contact(); f.resetForm()" #f="ngForm" novalidate>
                       <div class="p pb-3">
                         <strong>Feel free to contact me </strong>
                       </div>
