@@ -1,55 +1,18 @@
 <div class="section" id="experience">
   <div class="container cc-experience">
     <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
+    <div class="card" *ngFor="let experience of exprienceData">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>June 2018 - August 2018</p>
-            <div class="h5">Wittyfeed</div>
+            <p>{{experience?.from_to_month_year}}</p>
+            <div class="h5">{{experience?.organization}}</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Full Stack Developer</div>
-            <p>Created fully functional projects for <strong>WittyFeed</strong>, A publisher Dashboard was created using <strong>Angular 6, CodeIgniter
-              3 , Rest API and JWT (Json Web Token).</strong> It involves multiple modules like Analytics, Stories, RSS Links, Payments.
-              Another project was Influencer admin Dashboard which has features like app approval, app rejection in OneFeed
-              (WittyFeed’s personalised feed SDK) integrations. Lastly the admin dashboard for managing publishers for OneFeed.
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>October 2017 - November 2017</p>
-            <div class="h5">MITS, GWALIOR</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Web Developer</div>
-            <p>Designed the Official Website of the <strong>INDUSTRY CONCLAVE</strong>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>August 2017 - September 2017</p>
-            <div class="h5">Querencia Club (MITS)</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Web Developer</div>
-            <p>Developed the Official Website of the <strong>MITSVAH Literary Fest</strong>
-              Under <strong>Querencia CLUB</strong>.</p>
+            <div class="h5">{{experience?.designation}}</div>
+            <p [innerHTML]="experience?.details"></p>
           </div>
         </div>
       </div>

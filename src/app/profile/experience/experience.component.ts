@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from '../profile.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  exprienceData: any;
 
-  constructor() { }
+  constructor(
+    private profile: ProfileService
+  ) { }
 
   ngOnInit() {
+    this.getExprience();
+  }
+
+  getExprience() {
+    this.profile.exprience().subscribe(data => {
+      this.exprienceData = data.response;
+    });
   }
 
 }

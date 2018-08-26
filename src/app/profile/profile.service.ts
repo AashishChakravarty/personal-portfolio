@@ -16,4 +16,16 @@ export class ProfileService {
   contactus(data: any): Observable<any> {
     return this.http.post(this.baseUrl + 'contact', data);
   }
+
+  skills(): Observable<any> {
+    return this.http.get(this.baseUrl + 'skills');
+  }
+
+  education(): Observable<any> {
+    return this.http.get(this.baseUrl + 'education');
+  }
+
+  exprience(): Observable<any> {
+    return this.http.get(this.baseUrl + 'exprience');
+  }
 }
