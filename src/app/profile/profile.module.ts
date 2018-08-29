@@ -13,12 +13,14 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
+import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    SnotifyModule
+    SnotifyModule,
+    NgxSpinnerModule
   ],
   declarations: [
     ProfileComponent,
