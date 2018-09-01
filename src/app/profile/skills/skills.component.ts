@@ -8,6 +8,7 @@ import { ProfileService } from '../profile.service';
 })
 export class SkillsComponent implements OnInit {
   skillsData: any;
+  // data: any;
 
   constructor(
     private profile: ProfileService
@@ -18,9 +19,10 @@ export class SkillsComponent implements OnInit {
   }
 
   getSkills() {
-    this.profile.skills().subscribe(data => {
-      this.skillsData = data.response;
-    });
+    // this.profile.skills().subscribe(data => {
+    //   this.skillsData = data.response;
+    // });
+    this.skillsData = this.profile.skills();
   }
 
 }

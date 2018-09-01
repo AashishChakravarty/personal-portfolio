@@ -18,9 +18,10 @@ export class EducationComponent implements OnInit {
   }
 
   getEducation() {
-    this.profile.education().subscribe(data => {
-      this.educationData = data.response;
-    });
+    // this.profile.education().subscribe(data => {
+    //   this.educationData = data.response;
+    // });
+    this.educationData = this.profile.education();
   }
 
 }

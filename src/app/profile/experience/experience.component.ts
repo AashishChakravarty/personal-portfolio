@@ -18,9 +18,10 @@ export class ExperienceComponent implements OnInit {
   }
 
   getExprience() {
-    this.profile.exprience().subscribe(data => {
-      this.exprienceData = data.response;
-    });
+    // this.profile.exprience().subscribe(data => {
+    //   this.exprienceData = data.response;
+    // });
+    this.exprienceData = this.profile.exprience();
   }
 
 }
