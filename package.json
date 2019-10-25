@@ -24,6 +24,7 @@
     "ng-snotify": "^4.3.1",
     "ngx-spinner": "^6.1.2",
     "rxjs": "^6.0.0",
+    "set-value": "^3.0.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
