@@ -1,21 +1,24 @@
 
-# Personal Portfolio - Resume
-
-### [Demo](https://aashish-resume.000webhostapp.com)
+# Angular Personal Portfolio - Resume
 
 
-## Steps to Setup
+## Steps to 
 
-1. Install dependencies
+- Required Tools
+ 
+  - Node - v8.9.4
+  - @angular/cli -  v6.0.8
 
-```bash
-npm install
-```
+- Install dependencies
 
-2. Run
+  ```bash
+  npm install
+  ```
 
-```bash
-ng serve --open
-```
+-  Run
+
+    ```bash
+    ng serve --open
+    ```
 
 You can browse at <http://localhost:4200>
